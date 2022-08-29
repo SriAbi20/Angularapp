@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Ubuntu',sans-serif;
+    margin: 0;
+    background-color: #caebdb !important;
+}
+
+
+
+.btn{
+margin:5px;
+}
+
+.landing-page{
+    background: white url("assets/img/bigbasket.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: #198754;
+}
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}

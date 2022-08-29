@@ -1,0 +1,48 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 text-sucess">Products admin</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nobis perferendis inventore sequi ab quo pariatur dicta, corrupti numquam consequatur doloribus molestias animi aut aliquid ad incidunt adipisci quaerat enim.</p>
+        <a routerLink="/products/add" class="btn btn-success btn-sm">Create New</a>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped table-hover text-center">
+             <thead class="bg-success text-white">
+                <tr>
+                    <th>SNO</th>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Actions</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr *ngFor="let product of products">
+                    <td *ngIf="product._id">{{getProductId(product._id)}}</td>
+                    <td>
+                        <img width="50" height="50" [src]="product.image"/>
+                    </td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.qty}}kgs</td>
+                    <td>
+                        <a routerLink="/products/{{product._id}}" class="btn btn-primary btn-sm">
+                        <button class="btn btn-primary btn-sm">
+                            <i class="fa fa-edit"></i>Edit
+                        </button>
+                    </a>
+                        <button class="btn btn-danger btn-sm" (click)="clickDeleteProduct(product._id)" >
+                            <i class="fa fa-trash"></i>Delete
+                        </button>
+                    </td>
+                </tr>
+             </tbody>
+            </table>
+        </div>
+    </div>
+</div>
