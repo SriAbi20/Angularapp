@@ -14,10 +14,9 @@ margin:5px;
 }
 
 .landing-page{
-    background: white url("assets/img/bigbasket.jpg") no-repeat scroll center;
     background-size: cover;
     height: 100vh;
-    color: #198754;
+    color: #ffffff;
 }
 .wrapper{
     background-color: rgba(0, 0, 0, 0.6);
