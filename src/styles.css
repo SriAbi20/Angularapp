@@ -4,7 +4,6 @@
 body{
     font-family: 'Ubuntu',sans-serif;
     margin: 0;
-    background-color: #caebdb !important;
 }
 
 
@@ -18,6 +17,5 @@ margin:5px;
     color: #ffffff;
 }
 .wrapper{
-    background-color: aliceblue;
     height: 100%;
 }
