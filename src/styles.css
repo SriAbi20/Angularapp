@@ -4,9 +4,8 @@
 body{
     font-family: 'Ubuntu',sans-serif;
     margin: 0;
+    background-color: #ffffff!important
 }
-
-
 
 .btn{
 margin:5px;
